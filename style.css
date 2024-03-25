@@ -1,2 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background-color: hsl(275, 100%, 97%);
+    background-image: src="assets/images/baground-pattern.desktop.svg";
+}
+.container {
+    background-color: hsl(0, 0%, 100%); 
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: gray;
+}
+p{
+    color: hsl(292, 42%, 14%);
+    display: inline-block;
+}
+.star{
+    display: flex;
+    align-items: center;
+}
+.star img {
+    width: 30px;
+    height: 30px;
+}
+span{
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 15px;
+}
+.top{
+    border-top: 1px solid rgb(221, 218, 218);
+}
+.btn-img{
+    outline: none;
+    width:fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.answer {
+    display: none;
+}
+.question:hover {
+   color: hsl(293, 86%, 23%);
+   cursor: pointer;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
