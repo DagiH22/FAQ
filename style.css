@@ -1,3 +1,4 @@
+@import url(https://fonts.google.com/specimen/Work+Sans);
 *{
     padding: 0;
     margin: 0;
@@ -8,8 +9,6 @@ header{
     background-image: url('assets/images/background-pattern-desktop.svg');
     position: absolute;
     width: 100%;
-
-
 }
 body{
     background-color: hsl(275, 100%, 97%);
@@ -19,6 +18,8 @@ body{
     /* justify-content: center;
     align-items: center; */
     color: hsl(292, 42%, 14%);
+    font-family: "work sans" ;
+    position: relative;
 }
 .container{
     background-color: hsl(0, 0%, 100%);
@@ -50,8 +51,7 @@ span{
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px 20px 0px;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
 .plus{
     padding: 0;
@@ -69,7 +69,7 @@ span{
     color: hsl(292, 16%, 49%);
     font-weight: 400;
     padding-bottom: 1.5rem;
-    lineheight
+    line-height: 1.2rem;
 }
 .question:hover{
     color:purple;
@@ -79,6 +79,48 @@ span{
     position: absolute;
     bottom: 0;
     padding-bottom: 10px;
+    align-self: center;
+    font-size: 11px; text-align: center; 
 }
-.attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 767px){
+
+.container {
+    width: 80%;
+    margin-bottom: 30px;
+}
+.plus{
+    padding-left: 10px;  
+}
+.answer{
+    padding-right: 10px;
+}
+.attribution{
+    padding-top: 10px;
+}
+
+}
+
+@media only screen and (max-width: 380px){
+body{
+    font-size: 0.75rem;
+    position: relative;
+}
+.container{
+    margin-bottom: 30px;
+}
+span{
+    font-size: 35px;
+}
+.star img {
+    width: 20px;
+    height: 20px;
+}
+.answer{
+    line-height: 1rem;
+}
+
+
+}
+
