@@ -1,21 +1,36 @@
-body {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 8rem;
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    position: absolute;
+    width: 100%;
+
+
+}
+body{
+    background-color: hsl(275, 100%, 97%);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vh;
-    background-color: hsl(275, 100%, 97%);
-    background-image: src="assets/images/baground-pattern.desktop.svg";
-}
-.container {
-    background-color: hsl(0, 0%, 100%); 
-    padding-left: 20px;
-    border-radius: 10px;
-    box-shadow: gray;
-}
-p{
+    /* justify-content: center;
+    align-items: center; */
     color: hsl(292, 42%, 14%);
-    display: inline-block;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: 600px;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    align-self: center;
+    justify-self: center;
+    z-index: 99;
+    margin-top: 150px;
 }
 .star{
     display: flex;
@@ -26,30 +41,44 @@ p{
     height: 30px;
 }
 span{
-    font-size: 3rem;
+    font-size: 50px;
     font-weight: 700;
-    display: inline-block;
-    margin-left: 15px;
+    padding: 20px;
 }
-.top{
-    border-top: 1px solid rgb(221, 218, 218);
+.theQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 0px;
+    font-weight: 700;
+    
 }
-.btn-img{
-    outline: none;
-    width:fit-content;
-    height: fit-content;
-    border-radius: 50%;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.plus{
     padding: 0;
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
-.answer {
+.top {
+    border-top: 1px solid rgb(233, 226, 226);
+}
+.answer{
     display: none;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    lineheight
 }
-.question:hover {
-   color: hsl(293, 86%, 23%);
-   cursor: pointer;
+.question:hover{
+    color:purple;
+    cursor: pointer;
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
